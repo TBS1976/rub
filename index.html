@@ -4,6 +4,58 @@
         <meta charset="utf-8">
         <title>沙雕猫的世界</title>
         <style>
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: auto;
+                background-color:#faf1b1;
+            }
+
+            li{
+                float: left;
+            }
+            li a, .dropbtn{
+                display: block;
+                color: #5e5d3a;
+                text-align: center;
+                padding: 12px 16px;
+                text-decoration: none;
+                }
+            li a.active{
+                background-color: #7d7d7d;
+                color: #fdf5b8;
+            }
+            li a:hover:not(.active), .dropdown:hover, .dropbtn{
+                background-color: #f3e84b;
+                color: #897f7f;
+            }
+            .dropdown{
+                    display:inline-block;
+                    }
+  
+            .dropdown-content{
+                    display:none;
+                    position:absolute;
+                    background-color:#f9f9f9;
+                    min-width:160px;
+                    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+                    }
+  
+            .dropdown-content a{
+                                color:black;
+                                padding:12px 16px;
+                                text-decoration:none;
+                                display:block;
+                               }
+  
+            .dropdown-content a:hover {
+                    background-color: #f1f1f1
+            }
+  
+            .dropdown:hover .dropdown-content{
+                    display:block;
+            }
             .button {
                     background-color: #82ed87;
                     border: none;
@@ -66,6 +118,25 @@
         border-radius: 10px;
         ">
         <img src="https://i0.hdslb.com/bfs/new_dyn/5e3a95212a0276a88013b1c1ff901af61584686032.jpg@1192w_850h.webp" alt="沙雕猫" width="336px" height="240px">
+        </div>
+        <div>
+            <ul>
+                <li><a class="active" href="#">关于</a></li>
+                <div class="dropdown">
+                    <a href="#">猫猫</a>
+                    <div class="dropdown-content" >
+                        <a href="jsyb.html">金丝银被猫</a>
+                        <a href="xdm.html">雪地麻猫</a>
+                        <a href="sglze.html">苏格兰折耳猫</a>
+                        <a href="qs.html">起司猫</a>
+                        <a href="cy.html">尺玉猫</a>
+                        <a href="xl.html">暹罗猫</a>
+                    </div>
+                </div>
+                <li><a href="#">专区</a></li>
+                <li><a href="#">更新</a></li>
+                <li><a href="#">联系</a></li>
+            </ul>
         </div>
         <div style = "
         max-width: 1400px;
