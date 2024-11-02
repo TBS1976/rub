@@ -53,9 +53,34 @@
             .dropdown-content a:hover {
                     background-color: #f1f1f1
             }
-  
             .dropdown:hover .dropdown-content{
                     display:block;
+            }
+            .text-animation {
+                background: linear-gradient(
+                    -45deg,
+                    #4800ff,
+                    #7700ff,
+                    #0080ff,
+                    #00e5ff,
+                    #2effce,
+                    #bfbbc172,
+                    #fff86982,
+                    #fff200,
+                    #ffa200,
+                    #f89191,
+                    #ff5151e1,
+                    #e9270d
+                );
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                background-size: 400% 400%;
+                animation: gradient 3s ease infinite alternate;
+            }
+            @keyframes gradient{
+                from{background-position: 0% 50%}
+                to{background-position: 100% 50%}
             }
             .button {
                     background-color: #82ed87;
@@ -71,7 +96,6 @@
                     cursor: pointer;
                     transition-duration: 0.4s;
                     }
-
             .button1 {
                     background-color: #0000;
                     background-image: linear-gradient(#fffb00,rgba(253, 209, 97, 0.572));
@@ -177,9 +201,10 @@
                 <li><a href="mm_lianxi.html">联系</a></li>
             </ul>
         </div>
-        <div style = "
-        max-width:  1400px;
-        text-align:center;
+        <div class="text-animation text-8lx font-extrabold"
+            style = "
+                max-width:  1400px;
+                text-align:center;
         ">
             <h1>十二种咪咪</h1>
         </div>
